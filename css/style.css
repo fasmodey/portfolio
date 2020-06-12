@@ -1,0 +1,126 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-navigation {
+    background-color: #15263e;
+}
+
+.navbar-nav.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.nav-link:hover {
+    color: rgb(6, 148, 101) !important;
+}
+
+.cv-frontend {
+    display: inline-block;
+    padding: 18px 28px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cv-frontend:hover {
+    background-color: #3c5d8b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.header-cv {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cv__who, 
+.header-cv__title {
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.cv-frontend {
+    background-color: rgb(6, 148, 101);
+    border-radius: 20px;
+}
+
+.about-info__skills ul {
+    list-style-type: "-";
+}
+
+.technical-skills,
+.soft-skills {
+    margin: 0;
+    padding: 0;
+}
+
+.technical-skill__item,
+.soft-skill__item {
+    padding: 4px 0;
+}
+
+.about-info__photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 10px solid rgb(6, 148, 101);
+}
+
+.projects-info__link {
+    text-decoration: none;
+}
+
+.projects-info__link:hover {
+    color: rgb(211, 143, 55);
+}
+
+.projects-frame {
+    width: 100%;
+    height: 600px;
+    /* display: none; */
+    
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-hide-frames {
+    width: 130px;
+}
+
+.footer {
+    background-color: #15263e;
+    color: #ffffff;
+}
+
+.email-link,
+.github-link {
+    color: rgb(70, 224, 173);
+    text-decoration: none;
+}
+
+.email-link:hover,
+.github-link:hover {
+    color: rgb(211, 143, 55);
+    text-decoration: none;
+}
