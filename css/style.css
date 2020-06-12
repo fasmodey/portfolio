@@ -4,10 +4,16 @@ body {
 }
 
 .header {
-    background-image: url('../images/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: -1;
+    background: url('../images/header.jpg') center / cover no-repeat;
+    filter: blur(7px);
 }
 
 .header-navigation {
