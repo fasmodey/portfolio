@@ -14,7 +14,6 @@ let showProject;
 form.addEventListener('click', event => {
     if (event.target.getAttribute('name') === 'preview') {
         showProject = event.target.value;
-        console.log(showProject);
     }
 });
 
