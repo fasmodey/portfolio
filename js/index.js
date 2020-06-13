@@ -3,9 +3,9 @@ const showFrame = document.querySelector('.show-frame');
 const hideFrame = document.querySelector('.hide-frame');
 const form = document.querySelector('form');
 const projects = {
-    'scss': 'example/scss-preprocessor/index.html',
+    scss: 'example/scss-preprocessor/index.html',
+    bootstrap: 'example/bootstrap-layout/index.html',
     'life-blog': 'example/life-blog/index.html',
-    'bootstrap': 'example/bootstrap-layout/index.html',
     'travel-blog': 'example/travel-blog/index.html'
 }
 
