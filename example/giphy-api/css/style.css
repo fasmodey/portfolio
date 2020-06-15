@@ -17,6 +17,10 @@ body {
     align-items: center;
 }
 
+.gifs-count {
+    text-align: center;
+}
+
 #giphy-category,
 #giphy-range,
 #find-gifs {
@@ -44,4 +48,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 729px) {
+    #search-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: stretch;
+    }
+
+    #search-form input {
+        margin-top: 8px;
+    }
 }
