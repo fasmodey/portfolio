@@ -8,9 +8,7 @@ find.addEventListener('click', (event) => {
     const data = giphyCategory.value;
     const gifsLimit = document.querySelector('#giphy-range').value || 30;
     const fetchUrl = `${url}search?q=${data}&api_key=${apiKey}&limit=${gifsLimit}&lang=ru`;
-
     
-
     if (data) {
         event.preventDefault();
     }
@@ -21,16 +19,15 @@ find.addEventListener('click', (event) => {
             .then(response => {
             let gifsArray = [];
 
+            if (document.querySelector('.gifs-not-found')) {
+                document.querySelector('.gifs-not-found').remove();
+            } else if (document.querySelector('.gifs-count')) {
+                document.querySelector('.gifs-count').remove();
+            }
+
             dropImg();
 
             if (response.data.length) {
-
-                if (document.querySelector('.gifs-not-found')) {
-                    document.querySelector('.gifs-not-found').remove();
-                } else if (document.querySelector('.gifs-count')) {
-                    document.querySelector('.gifs-count').remove();
-                }
-
                 const stringFormatter = response.data.length === 1 ? 'изображение' :
                                         response.data.length < 5 ? 'изображения' : 'изображений';
 
