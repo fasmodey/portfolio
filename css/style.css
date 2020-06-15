@@ -95,25 +95,6 @@ body {
     color: rgb(211, 143, 55);
 }
 
-.projects-frame {
-    width: 100%;
-    height: 600px;
-    /* display: none; */
-    
-}
-
-.active {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.show-hide-frames {
-    width: 130px;
-}
-
 .footer {
     background-color: #15263e;
     color: #ffffff;
@@ -129,4 +110,11 @@ body {
 .github-link:hover {
     color: rgb(211, 143, 55);
     text-decoration: none;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
 }

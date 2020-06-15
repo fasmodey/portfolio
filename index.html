@@ -44,7 +44,7 @@
                 <article class="header-cv">
                     <h1 class="header-cv__who">Alexander Khudan</h1>
                     <h2 class="header-cv__title">Trainee / Junior Front-End developer</h2>
-                    <a class="cv-frontend" href="cv-document/CV_Front-end_Alexander_Khudan.doc" download>Download CV</a>
+                    <a class="btn btn-success" href="cv-document/CV_Front-end_Alexander_Khudan.doc" download>Download CV</a>
                 </article>
             </div>
         </div>
@@ -92,7 +92,7 @@
                     <h3 class="sales-manager__title">Sales Manager</h3>
                     <span class="sales-manager__from-to">April 2017 – now</span>
                     <span class="sales-manager__company">Company: Funpay</span>
-                    <a href="https://funpay.ru/users/919381/" class="sales-manager__profile">Click here for visiting profile</a>
+                    <a href="https://funpay.ru/users/919381/" class="sales-manager__profile projects-info__link" target="_blank">Click here for visiting profile</a>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-items-center mt-md-3 experience-work__electronic-engineer">
                     <h3 class="electronic-engineer__title">Electronic engineer</h3>
@@ -108,25 +108,28 @@
             <div class="row">
                 <h2 class="col-lg-12 text-center">Projects</h2>
 
-                <p class="col-lg-12 text-center projects-info">
-                    Hi! You can see examples of my "projects" below or visit my github <a href="https://github.com/fasmodey/code-samples" class="projects-info__link">repositories!</a> In my github repositories you can see some usage of javascript.
-                </p>
+                <ul class="projects-list col-lg-12">
+                    <li class="projects-list__item my-1">Bootstrap: 
+                        <a href="https://fasmodey.github.io/portfolio/example/bootstrap-layout/" class="btn btn-success" target="_blank">preview</a>
+                        <a href="https://github.com/fasmodey/code-samples/tree/master/bootstrap-layout" class="btn btn-primary" target="_blank">source code</a>
+                    </li>
+                    <li class="projects-list__item my-1">Travel blog:
+                        <a href="https://fasmodey.github.io/portfolio/example/travel-blog/" class="btn btn-success" target="_blank">preview</a>
+                        <a href="https://github.com/fasmodey/code-samples/tree/master/travel-blog" class="btn btn-primary" target="_blank">source code</a>
+                    </li>
+                    <li class="projects-list__item my-1">Life blog:
+                        <a href="https://fasmodey.github.io/portfolio/example/life-blog/" class="btn btn-success" target="_blank">preview</a>
+                        <a href="https://github.com/fasmodey/code-samples/tree/master/life-blog" class="btn btn-primary" target="_blank">source code</a>
+                    </li>
+                    <li class="projects-list__item my-1">SCSS:
+                        <a href="https://fasmodey.github.io/portfolio/example/scss-preprocessor/" class="btn btn-success" target="_blank">preview</a>
+                        <a href="https://github.com/fasmodey/code-samples/tree/master/scss-preprocessor" class="btn btn-primary" target="_blank">source code</a>
+                    </li>
+                    <li class="projects-list__item my-1">AJAX:
+                        <a href="https://github.com/fasmodey/code-samples/tree/master/js/ajax" class="btn btn-primary" target="_blank">source code</a>
+                    </li>
+                </ul>
                 
-                <div class="col-lg-12 d-flex flex-column align-items-center project-preview mt-4">
-                    <form>
-                        <input type="radio" id="bootstrap" name="preview" value="bootstrap">
-                        <label for="bootstrap">Bootstrap</label><br>
-                        <input type="radio" id="travel-blog" name="preview" value="travel-blog">
-                        <label for="travel-blog">Travel blog</label><br>
-                        <input type="radio" id="life-blog" name="preview" value="life-blog">
-                        <label for="life-blog">life blog</label><br>
-                        <input type="radio" id="preprocessor" name="preview" value="scss">
-                        <label for="preprocessor">SCSS</label><br>
-                        <input type="button" value="Show example" class="btn btn-success show-frame">
-                        <input type="button" value="Hide example" class="btn btn-success hide-frame">
-                    </form>
-                    <iframe src="" name="iframe_a" class="projects-frame hidden mt-5"></iframe>
-                </div>
             </div>
         </article>
     </main>
