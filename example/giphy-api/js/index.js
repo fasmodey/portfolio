@@ -8,7 +8,9 @@ find.addEventListener('click', (event) => {
     const data = giphyCategory.value;
     const gifsLimit = document.querySelector('#giphy-range').value || 30;
     const fetchUrl = `${url}search?q=${data}&api_key=${apiKey}&limit=${gifsLimit}&lang=ru`;
+
     
+
     if (data) {
         event.preventDefault();
     }
