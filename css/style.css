@@ -60,11 +60,6 @@ body {
     margin-bottom: 14px;
 }
 
-.cv-frontend {
-    background-color: rgb(6, 148, 101);
-    border-radius: 20px;
-}
-
 .about-info__skills ul {
     list-style-type: "-";
 }
@@ -84,7 +79,7 @@ body {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 10px solid rgb(6, 148, 101);
+    border: 10px solid #28a745;
 }
 
 .projects-info__link {
@@ -102,7 +97,7 @@ body {
 
 .email-link,
 .github-link {
-    color: rgb(70, 224, 173);
+    color: #28a745;
     text-decoration: none;
 }
 
