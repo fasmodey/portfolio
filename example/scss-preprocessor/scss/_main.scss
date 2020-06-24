@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+#pageColor {
+  @include buttonStyle(rgb(138, 13, 13), rgb(161, 215, 240));
+}
+
 body {
     margin: 0 auto;
     padding: 0;

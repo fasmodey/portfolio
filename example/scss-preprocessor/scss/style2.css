@@ -1,19 +1,12 @@
-#pageColor {
-  padding: 10px 36px;
-  background-color: #8a0d0d;
-  color: #a1d7f0;
-  font-weight: bold;
-  border: none;
-  cursor: pointer; }
-
 body {
   margin: 0 auto;
   padding: 0;
   max-width: 1300px;
-  background-color: #ffffff; }
+  background-color: #21232e;
+  border: 3px solid red; }
 
 .header {
-  background-image: url("../img/m-h-day.jpg");
+  background-image: url("../img/m-h-night.jpg");
   min-height: 560px;
   background-repeat: no-repeat;
   border-bottom-right-radius: 40%;
@@ -22,13 +15,13 @@ body {
   .header-wrap {
     padding-top: 20px;
     margin-left: 130px;
-    color: #2c2f3c;
+    color: #ffffff;
     font-family: "Source Sans Pro", sans-serif; }
     .header-wrap div:not([class]) {
       padding-top: 24px; }
   .header_button {
     padding: 10px 36px;
-    background-color: #699900;
+    background-color: #e3ac00;
     color: #ffffff;
     font-weight: bold;
     border: none;
@@ -52,19 +45,19 @@ body {
       position: absolute;
       z-index: -1;
       height: 36px;
-      background-color: #14a0c7;
+      background-color: #ff4e33;
       width: 210px;
       right: 190px;
       bottom: 0px; }
   .header_text {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Fresca", sans-serif;
     font-size: 16px;
     white-space: pre-line;
     margin-bottom: 30px; }
 
 .landing-logo, .footer_logo {
   display: inline-block;
-  font-family: "Hind", sans-serif;
+  font-family: "Fresca", sans-serif;
   letter-spacing: -0.5px;
   font-weight: bold; }
   .landing-logo img, .footer_logo img {
@@ -89,24 +82,24 @@ body {
   .section_card_heading {
     color: #ffffff; }
   .section_card_text {
-    color: #bbc3c9; }
+    color: #d1d1d1; }
   .section_banner_heading {
-    color: #2c2f3c; }
+    color: #ffffff; }
   .section_banner_text {
-    color: #bbc3c9; }
+    color: #d1d1d1; }
   .section_text {
     z-index: 10;
     position: relative;
     font-size: 30px;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
-    color: #2c2f3c; }
+    color: #ffffff; }
     .section_text::after {
       content: "";
       position: absolute;
       z-index: -1;
       height: 36px;
-      background-color: #14a0c7;
+      background-color: #ff4e33;
       right: 8px;
       width: 136px;
       bottom: 6px; }
@@ -118,7 +111,7 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
-    background-color: #21232e; }
+    background-color: #3b3f50; }
   .section_card_img {
     border-radius: 5px;
     width: 100%;
@@ -134,13 +127,13 @@ body {
   .section_card_text {
     padding: 0 52px;
     padding-bottom: 10px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Fresca", sans-serif;
     text-align: justify;
     margin: 0;
     font-size: 16px;
     line-height: 1.4; }
   .section_link {
-    color: #bbc3c9;
+    color: #d1d1d1;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     font-weight: bold; }
@@ -154,11 +147,11 @@ body {
     box-sizing: border-box;
     padding: 0 80px;
     margin-top: 34px;
-    background: linear-gradient(45deg, #699900, #2b59dd);
+    background: linear-gradient(45deg, #e3ac00, #922b54);
     border-radius: 5px; }
   .section_banner_button {
     padding: 10px 36px;
-    background-color: #699900;
+    background-color: #e3ac00;
     color: #ffffff;
     font-weight: bold;
     border: none;
@@ -177,7 +170,7 @@ body {
       position: absolute;
       z-index: -1;
       height: 36px;
-      background-color: #14a0c7;
+      background-color: #ff4e33;
       left: 108px;
       width: 58px;
       bottom: 24px; }
@@ -186,8 +179,8 @@ body {
     padding-bottom: 34px; }
 
 .footer {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #21232e;
+  font-family: "Fresca", sans-serif;
+  background-color: #3b3f50;
   padding: 32px 130px; }
   .footer-wrap {
     padding-top: 66px;
@@ -198,8 +191,10 @@ body {
     box-sizing: border-box;
     padding-left: 30px;
     width: 330px;
-    color: #bbc3c9; }
+    color: #d1d1d1; }
   .footer-cr {
-    color: #bbc3c9; }
+    color: #d1d1d1; }
   .footer_logo {
-    color: #bbc3c9; }
+    color: #d1d1d1; }
+
+/*# sourceMappingURL=style2.css.map */

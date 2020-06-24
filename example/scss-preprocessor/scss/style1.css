@@ -1,16 +1,9 @@
-#pageColor {
-  padding: 10px 36px;
-  background-color: #8a0d0d;
-  color: #a1d7f0;
-  font-weight: bold;
-  border: none;
-  cursor: pointer; }
-
 body {
   margin: 0 auto;
   padding: 0;
   max-width: 1300px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border: 3px solid red; }
 
 .header {
   background-image: url("../img/m-h-day.jpg");
@@ -203,3 +196,5 @@ body {
     color: #bbc3c9; }
   .footer_logo {
     color: #bbc3c9; }
+
+/*# sourceMappingURL=style1.css.map */

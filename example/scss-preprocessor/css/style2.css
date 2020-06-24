@@ -1,3 +1,11 @@
+#pageColor {
+  padding: 10px 36px;
+  background-color: #8a0d0d;
+  color: #a1d7f0;
+  font-weight: bold;
+  border: none;
+  cursor: pointer; }
+
 body {
   margin: 0 auto;
   padding: 0;
