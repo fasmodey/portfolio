@@ -1,0 +1,106 @@
+@import "variables";
+
+.gallery {
+
+    &-preview {
+        margin-left: 236px;
+
+        &::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            background: url("../image/yolochka.png");
+            opacity: 0.13;
+            top: 294px;
+            left: 14px;
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+        }
+
+        &__image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-footer {
+        position: relative;
+        top: -44px;
+
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+        &__navigation {
+
+            &-wrapper {
+                padding-left: 115px;
+                grid-column: 1/6;
+                margin-right: 14px;
+                background-color: $coromarantColor;
+                box-shadow: 0px 5px 60px rgba(55, 55, 55, 0.2);
+            }
+        }
+
+        &__slider {
+            position: relative;
+            margin-left: 40px;
+            top: 16px;
+            a {
+                i {
+                    padding-bottom: 22px;
+                }
+            }
+        }
+
+        &__circle {
+            color: $header-text-color;
+            opacity: 1;
+
+            &-active {
+                color: $main-color;
+            }
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-column: 6/13;
+        }
+
+        &__item {
+            width: 114px;
+            height: 74px;
+            align-self: flex-end;
+            justify-self: flex-end;
+
+        }
+
+        &__active {
+            width: 160px;
+            height: 103px; 
+        }
+
+        &__section {
+
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__title {
+            display: inline-block;
+            padding: 7px 40px;
+            @include font-style($helveticaNeueFont, $main-color, $small-font);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            @include spacing-and-line($small-spacing, $line-height-medium);
+        }
+    }
+}

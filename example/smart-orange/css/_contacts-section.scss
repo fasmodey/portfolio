@@ -1,0 +1,77 @@
+@import "variables";
+
+.contacts {
+    margin-top: 130px;
+    margin-left: 210px;
+
+    &-header {
+        display: grid;
+        grid-template-columns: 200px auto;
+        
+        
+        &__title {
+            grid-column: 1/2;
+            @include font-style($coromorantFont, $dark-color, $line-height-big);
+            line-height: $line-height-big;
+            margin: 0;
+        }
+
+        &__location {
+            margin-left: 50px;
+            grid-column: 2/4;
+
+            &-grid {
+                grid-column: 4/6;
+            }
+        }
+
+        &__heading {
+            @include font-style($helveticaNeueFont, $document-text-color, $big-medium-font);
+            line-height: 24px;
+        }
+        
+        &__address {
+            @include font-style($coromorantFont, $dark-color, $big-font);
+            line-height: $line-height-big;
+            margin: 0;
+        }
+
+        &__phone {
+            @include font-style($coromorantFont, $dark-color, $big-font);
+            line-height: 64px;
+            margin: 0;
+        }
+
+        &__time {
+            @include font-style($helveticaNeueFont, $document-text-color, $small-font);
+            text-transform: uppercase;
+        }
+
+        &__call {
+            @include links-style;
+        }
+    }
+
+    &-contact {
+        position: relative;
+        margin-top: 55px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+        &__us {
+            @include links-style;
+            grid-column: 1/2;
+            position: relative;
+
+            &::before {
+                @include content-before("\f658", -50px, 26px, $main-color);
+            }
+        }
+
+        &__map {
+            grid-column: 2/6;
+            width: 100%;
+        }
+    }
+}

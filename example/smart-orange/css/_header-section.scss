@@ -1,0 +1,180 @@
+@import "variables";
+
+.header {
+    position: relative;
+    margin: 0 auto;
+
+    &-wrapper {
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: 750px;
+        padding: 30px 40px;
+
+        &__club {
+            &::before {
+                @include slider(url("../image/header-bg-slide1-min.jpg"));
+                
+            }
+        }
+
+        &__house {
+            &::before {
+                @include slider(url("../image/header-bg-slide2-min.jpg"));
+            }
+        }
+    }
+    
+    &-heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 360px;
+    
+        &__contact {
+            position: relative;
+
+            &::before {
+                @include content-before("\f879", -38px, $big-medium-font, $main-color);
+                border: 1px solid rgba(117, 117, 117, 0.4);
+                padding-top: 4px;
+                bottom: 10px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+    
+        &__phone {
+            @include font-style($helveticaNeueFont, $main-color);
+            margin: 0;
+            line-height: $line-height-medium;
+        }
+    
+        &__call {
+            @include font-style($helveticaNeueFont, $header-text-color, $small-font);
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 1px solid $main-color;
+            line-height: $line-height-medium;
+        }
+    
+        &__lang {
+            @include text-style-size;
+            color: $header-text-color;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid rgba(117, 117, 117, 0.4);
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+
+        &__trigger {
+            @include font-style($helveticaNeueFont, $main-color, $small-font);
+            margin-right: 44px;
+        }
+
+        &__progress {
+            position: relative;
+            margin-left: 6px;
+            width: 1px;
+            height: 78px;
+            background: rgba($header-text-color, 0.4);
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 25px;
+                background-color: $header-text-color;
+            }
+        }
+
+        &__page {
+            margin: 5px 0;
+            display: inline-block;
+            transform: rotate(-90deg);
+        }
+
+        &__title {
+            color: $main-color;
+            line-height: 24px;
+        }
+
+        &__appartment {
+            text-transform: uppercase;
+        }
+
+        &__description {
+            @include font-style($coromorantFont, $coromarantColor, $line-height-big);
+            line-height: $line-height-big;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        &__about {
+            @include text-style-size;
+            @include font-style($helveticaNeueFont, $coromarantColor, $small-font);
+            background-color: $main-color;
+            padding: 10px 52px;
+            letter-spacing: $small-spacing;
+            text-transform: uppercase;
+            border-radius: 3px;
+            text-decoration: none;
+            margin-top: 64px;
+            display: inline-block;
+        }
+    }
+
+    &-footer {
+        margin-left: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include font-style($helveticaNeueFont, $header-text-color, $small-font);
+        text-transform: uppercase;
+        align-items: center;
+
+        &__location {
+            position: relative;
+            
+            &::before {
+                @include content-before("\f3c5", -20px, $big-medium-font, $main-color);
+            }
+        }
+
+        &__metro {
+            position: relative;
+            left: 60px;
+            @include font-style($helveticaNeueFont, $header-text-color, $small-font);
+
+            &::before {
+                content: "M";
+                border: 0.8px solid $main-color;
+                @include font-style($helveticaNeueFont, $main-color, $small-font);
+                margin-right: 8px;
+                padding: 3px 4px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+
+        &__image {
+            width: 66px;
+            height: 46px;
+        }
+    }
+}

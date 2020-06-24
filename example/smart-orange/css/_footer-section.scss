@@ -1,0 +1,54 @@
+@import "variables";
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $dark-color;
+    align-items: center;
+
+    &-location {
+        @include font-style($helveticaNeueFont, $footer-text-color, $big-medium-font);
+
+        &__address {
+            position: relative;
+    
+            &::before {
+                @include content-before("\f3c5", -20px, $big-medium-font, $main-color);
+            }
+        }
+    
+        &__phone {
+            position: relative;
+    
+            &::before {
+                @include content-before("\f879", -20px, $big-medium-font, $main-color);
+            }
+        }
+    }
+
+    &-social {
+        &__facebook {
+            color: $footer-text-color;
+            margin-right: 10px;
+        }
+
+        &__instagram {
+            color: $footer-text-color;
+        }
+    }
+
+    &-lang {
+        &__item {
+            @include font-style($helveticaNeueFont, $footer-text-color, $small-font);
+            text-decoration: none;
+            line-height: $line-height-medium;
+            letter-spacing: $small-spacing;
+            margin: 0 5px;
+        }
+
+        &__active {
+            border-bottom: 1px solid $main-color;
+        }
+    }
+}
