@@ -45,6 +45,7 @@
         &__time {
             @include font-style($helveticaNeueFont, $document-text-color, $small-font);
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         &__call {
