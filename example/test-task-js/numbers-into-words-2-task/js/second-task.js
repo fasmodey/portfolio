@@ -104,8 +104,12 @@ const formattingString = (numberValue) => {
 const oneToHundred = (number) => {
     let str = '';
 
+    if (!+number) {
+        return str;
+    }
+
     if (number < 10) {
-        str += `${oneNine[number]}`;
+        str += `${oneNine[+number]}`;
     } else if(number >= 10 && number < 20) {
         str += `${tenNineteen[number]}`;
     } else if(number >= 20 && number < 100) {
@@ -118,8 +122,16 @@ const oneToHundred = (number) => {
 const houndredTothousand = (number) => {
     let str = '';
 
-    str += `${oneNine[(number[0])]} ${hundred} ${oneToHundred(number.substr(1, 2))}`;
-    return str;
+    if (!+number) {
+        return str;
+    } else if (!+number[0]) {
+        str += `${oneToHundred(+number.substr(1, 2))}`;
+        return str;
+    } else {
+        str += `${oneNine[(number[0])]} ${hundred} ${oneToHundred(number.substr(1, 2))}`;
+        return str;
+    }
+
 }
 
 const thousandToMillion = (number) => {
@@ -138,8 +150,14 @@ const millionToBillion = (number) => {
     let str = '';
 
     integerArr = number.split(regExp);
-    str += integerArr[0] < 100 ? `${oneToHundred(integerArr[0])} ${million} ${houndredTothousand(integerArr[1])} ${thousand} ${houndredTothousand(integerArr[2])}`:
+
+    if (!houndredTothousand(integerArr[1])) {
+        str += integerArr[0] < 100 ? `${oneToHundred(integerArr[0])} ${million} ${houndredTothousand(integerArr[2])}`:
+        `${houndredTothousand(integerArr[0])} ${million} ${houndredTothousand(integerArr[2])}`;
+    } else {
+        str += integerArr[0] < 100 ? `${oneToHundred(integerArr[0])} ${million} ${houndredTothousand(integerArr[1])} ${thousand} ${houndredTothousand(integerArr[2])}`:
         `${houndredTothousand(integerArr[0])} ${million} ${houndredTothousand(integerArr[1])} ${thousand} ${houndredTothousand(integerArr[2])}`;
+    }
 
     return str;
 }
