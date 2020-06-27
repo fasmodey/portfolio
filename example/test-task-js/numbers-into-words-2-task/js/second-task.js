@@ -77,6 +77,7 @@ convertNumber.addEventListener('click', () => {
     document.querySelector('.container').appendChild(hr);
 });
 
+//Вызов функций для проверки разрядности
 const formattingString = (numberValue) => {
     let str = '';
 
@@ -101,6 +102,7 @@ const formattingString = (numberValue) => {
     return str;
 }
 
+//Функции форматирования диапазонов
 const oneToHundred = (number) => {
     let str = '';
 
