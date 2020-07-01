@@ -101,13 +101,15 @@ body {
 }
 
 .email-link,
-.github-link {
+.github-link,
+.linkedin-link {
     color: #28a745;
     text-decoration: none;
 }
 
 .email-link:hover,
-.github-link:hover {
+.github-link:hover,
+.linkedin-link:hover {
     color: rgb(211, 143, 55);
     text-decoration: none;
 }
